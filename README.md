@@ -54,6 +54,7 @@ Open your browser: http://localhost/hostel/
 | Attendance     | `attendance.php`      | Make you able to take attendance of students          |
 | Fee            | `fees.php `           | You can add fees to your student                      |
 | Reset Password | `change-password.php` | You can change your password                          |
+| Notices        | `notices.php`         | You can add notices and check it in the dashboard     |
 
 ---
 
@@ -71,21 +72,28 @@ This is automatically applied when adding a student — no manual assignment nee
 ## File Structure
 
 ```
-hostel/
-├── index.php              # Root redirect
-├── login.php              # Login page
-├── logout.php             # Logout handler
-├── dashboard.php          # Main dashboard
-├── students.php           # Student CRUD
-├── classes.php            # Class view
-├── timetable.php          # Timetable CRUD
-├── schema.sql             # Database schema + seed data
+Hostel/
+├── index.php                  # Root redirect
+├── login.php                  # Login page
+├── logout.php                 # Logout handler
+├── student.php                # Student portal login
+├── student-dashboard.php      # Student portal dashboard
+├── dashboard.php              # Admin dashboard
+├── students.php               # Student CRUD
+├── classes.php                # Class view
+├── timetable.php              # Timetable CRUD
+├── attendance.php             # Attendance tracking
+├── fees.php                   # Fee management
+├── notices.php                # Notice board
+├── change-password.php        # Admin password change
+├── generate-students.php      # Demo student generator (delete before live)
+├── schema.sql                 # Database schema + seed data
 ├── css/
-│   └── style.css          # Full stylesheet
+│   └── style.css              # Full stylesheet
 ├── js/
-│   └── app.js             # Modal helpers, class hints, alerts
+│   └── app.js                 # Modal helpers, class hints, alerts
 └── includes/
-    ├── config.php          # DB connection + helpers
-    ├── auth.php            # Session/login guards
-    └── navbar.php          # Shared navigation
+    ├── config.php             # DB connection + helpers
+    ├── auth.php               # Session/login guards
+    └── navbar.php             # Shared navigation
 ```

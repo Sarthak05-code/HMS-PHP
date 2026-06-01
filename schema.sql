@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS admin (
 
 -- Insert default admin: admin / admin123
 INSERT INTO admin (username, password)
-VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi')
+VALUES ('admin', '$2y$10$wsc4kmzVzPZttlbqz510s.2zK4r/Ox5kmfXO8FtM0Xy38P5H8CAcu')
 ON DUPLICATE KEY UPDATE username = username;
 
 -- Students
